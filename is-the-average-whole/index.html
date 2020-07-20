@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Is the average whole</title>
+</head>
+<body>
+
+  <script>
+    function isTheAverageWhole (numbersArray) {
+      var arrTotal = 0;
+      for ( var i = 0; i < numbersArray.length; i ++ ) {
+        arrTotal += numbersArray[i];
+      }
+      arrTotal / 10;
+      if ( arrTotal === Number.isInteger(arrTotal)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  </script>
+
+</body>
+</html>
