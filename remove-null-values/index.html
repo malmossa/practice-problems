@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove null values</title>
+</head>
+<body>
+  <script>
+    function removeNullValues(array) {
+      var newArray = array.filter(function (e) {
+        return e !== null;
+      })
+      return newArray;
+    }
+
+   console.log(removeNullValues([null, null, null, 7, null, "eight"]));
+   console.log(removeNullValues([true, null, false, {}, null, 43, "node"]));
+   console.log(removeNullValues([3, 5, null, null, 87, "hello", "goodbye"]));
+  </script>
+
+</body>
+</html>
