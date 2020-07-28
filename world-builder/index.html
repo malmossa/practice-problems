@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Builder</title>
+</head>
+<body>
+  <script>
+    function wordBuilder (wordToSpell) {
+      var returnArray = [];
+      var str = "";
+
+      for ( var i = 0; i < wordToSpell.length; i ++ ) {
+
+        str = str + wordToSpell[i]
+        returnArray.push(str);
+      }
+    return returnArray;
+    }
+
+    console.log(wordBuilder("Mansor"))
+  </script>
+</body>
+</html>
