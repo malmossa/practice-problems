@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odd up even down</title>
+</head>
+<body>
+  <script>
+    function oddUpEvenDown (array) {
+      var newArry = [];
+      for ( var i = 0; i < array.length; i ++ ) {
+        if ( array[i] % 2 ) {
+         newArry.push(array[i] + 1);
+        } else {
+          newArry.push(array[i] - 1);;
+        }
+      }
+      return newArry
+    }
+  </script>
+</body>
+</html>
