@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payscale Analyzer</title>
+</head>
+<body>
+  <script>
+    function payscaleAnalyzer (payList) {
+      var largest = Math.max.apply(null, payList);
+      var smallest = Math.min.apply(null, payList);
+      return largest - smallest;
+    }
+  </script>
+</body>
+</html>
