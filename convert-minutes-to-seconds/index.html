@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert Minutes to Seconds</title>
+</head>
+<body>
+  <script>
+    function convertMinutesToSeconds(timeToConvert) {
+      const minutes = parseInt(timeToConvert.substr(0, 2), 10) * 60;
+
+      const seconds = parseInt(timeToConvert.substr(3), 10);
+      return minutes + seconds
+    }
+
+    console.log(convertMinutesToSeconds("15:34"))
+  </script>
+</body>
+</html>
